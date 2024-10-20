@@ -3,7 +3,7 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Image Display Webpage</title>  
+    <title>Image Gallery</title>  
     <style>  
         body {  
             font-family: Arial, sans-serif;  
@@ -13,17 +13,31 @@
             justify-content: center;  
             height: 100vh;  
             margin: 0;  
+            background-color: #f0f0f0;  
         }  
-        img {  
-            max-width: 100%;  
+        .image-container {  
+            display: flex;  
+            justify-content: space-around;  
+            width: 80%;  
+        }  
+        .image-container img {  
+            max-width: 30%;  
             height: auto;  
-            margin: 20px;  
+            border: 2px solid #ccc;  
+            border-radius: 8px;  
+            transition: transform 0.3s ease;  
+        }  
+        .image-container img:hover {  
+            transform: scale(1.05);  
         }  
     </style>  
 </head>  
 <body>  
-    <h1>My Image Display Webpage</h1>  
-    <img src="王座.jpg" alt="Image 1">  
-    <img src="皇帝.jpg" alt="Image 2">  
+    <h1>My Image Gallery</h1>  
+    <div class="image-container">  
+        <img src="机械神甫.jpg" alt="Image 1">  
+        <img src="王座.jpg" alt="Image 2">  
+        <img src="皇帝.jpg" alt="Image 3">  
+    </div>  
 </body>  
 </html>
