@@ -3,7 +3,7 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>战锤吧</title>  
+    <title>战锤图片展示与介绍</title>  
     <style>  
         body {  
             font-family: Arial, sans-serif;  
@@ -14,11 +14,17 @@
             height: 100vh;  
             margin: 0;  
             background-color: #f0f0f0;  
+            padding: 20px;  
+            box-sizing: border-box;  
+        }  
+        .content-container {  
+            width: 80%;  
+            max-width: 800px;  
         }  
         .image-container {  
             display: flex;  
             justify-content: space-around;  
-            width: 80%;  
+            margin-bottom: 20px;  
         }  
         .image-container img {  
             max-width: 30%;  
@@ -30,16 +36,40 @@
         .image-container img:hover {  
             transform: scale(1.05);  
         }  
+        .text-box {  
+            background-color: #fff;  
+            border: 1px solid #ccc;  
+            border-radius: 8px;  
+            padding: 10px;  
+            margin-bottom: 20px;  
+            height: 150px; /* 设置固定高度以启用滚动条 */  
+            overflow-y: auto; /* 启用垂直滚动条 */  
+            box-sizing: border-box;  
+        }  
     </style>  
 </head>  
 <body>  
-    <h1>游戏——战锤网页测试</h1>  
-    <h2>作业测试网页</h2>
-    <h3>picture</h3>
-    <div class="image-container">  
-        <img src="机械神甫.jpg" alt="Image 1">  
-        <img src="王座.jpg" alt="Image 2">  
-        <img src="皇帝.jpg" alt="Image 3">  
+    <div class="content-container">  
+        <h1>战锤图片</h1>  
+        <div class="image-container">  
+            <img src="images/image1.jpg" alt="Image 1">  
+            <img src="images/image2.jpg" alt="Image 2">  
+            <img src="images/image3.jpg" alt="Image 3">  
+        </div>  
+        <div class="text-box">  
+            <h2>图片1介绍</h2>  
+            <p>这里是关于第一张图片的详细介绍文本。你可以在这里添加任何你想要的文本内容，包括战锤的历史、特点或者背后的故事。</p>  
+            <!-- 可以根据需要添加更多内容以测试滚动效果 -->  
+        </div>  
+        <div class="text-box">  
+            <h2>图片2和3联合介绍</h2>  
+            <p>这里是关于第二张和第三张图片的联合介绍文本。同样，你可以在这里添加任何你想要的文本内容。</p>  
+        </div>
+        <div class="text-box">
+            <h2>图片2和3联合介绍</h2>
+            <p>这里是关于第二张和第三张图片的联合介绍文本。同样，你可以在这里添加任何你想要的文本内容。</p>
+            <!-- 可以根据需要添加更多内容以测试滚动效果 -->  
+        </div>  
     </div>  
 </body>  
 </html>
